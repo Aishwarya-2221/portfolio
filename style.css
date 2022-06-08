@@ -5,6 +5,7 @@ nav{
     justify-content: space-between;
     padding: 10px 15vw;
     letter-spacing: 3px;
+    background-color: rgb(252, 243, 231);
 }
 nav>h1{
     font-weight: bold;
@@ -13,20 +14,355 @@ nav>h1{
 nav>ul{
     list-style: none;
     display: flex;
+    align-items: center;
 
 }
 nav>ul>li{
     font-size: 1.3rem;
     margin:0 30px;
 }
+nav>ul>li:hover{
+    color: rgb(226, 211, 40);
+}
 
 .port{
-    width: 100%;
+     width: 70vw;
     height: 86vh;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: aquamarine;
+    
     text-align: center;
     
 }
+.about{
+    margin-top: 30vh;
+    text-align: left;
+}
+.about>h1{
+    margin: 0;
+    font-size: 3rem;
+}
+.about>h4{
+    
+    font-size: 1.1rem;
+}
+.about>button{
+    background-color: rgb(226, 211, 40);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    letter-spacing: 3px;
+}
+.fa{
+    margin: 0 10px;
+}
+.icon{
+    margin-top: 15px;
+}
+.image>img{
+    width: 20vw;
+    height: 60vh;
+    /* margin: 10vh; */
+    border-radius: 9px;
+    border-bottom: 10vh;
+    position: absolute;
+    right: 1.5vw;
+    bottom: 1.5vw;
+    border: 1px solid rgb(187, 187, 187);
+}
+.image{
+    border: 3px solid rgb(242, 214, 102);
+    width: 20vw;
+    height: 60vh;
+    margin-top: 10vh;
+    border-radius:9px ;
+    position: relative;
+}
+.info>h1{
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-align: left;
+    margin: 0;
+    margin-top: 4vh;
+}
+.info>hr{
+    width: 5vw;
+    margin: 0;
+    height: 5px;
+    background-color: rgb(242, 214, 102);
+    border: none;
+}
+.info>p{
+    text-align: left;
+    font-size: 1.1rem;
+    color: rgb(109, 108, 108);
+    font-style: italic;
+}
+.skills>section>h1{
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 5px;
+}
+.skills>section>hr{
+    height: 5px;
+    width: 5vw;
+    background-color: rgb(242, 214, 102);
+    border: none;
+}
+.cardcontainer{
+    width: 80vw;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: auto;
+    margin-top: 30px;
+    justify-content: center;
+    
+}
+.cardcontainer>section{
+    width: 25vw;
+    height: 40vh;
+    /* border: 1px solid gray;
+    border-radius: 5px; */
+    margin: auto;
+    background-color: white;
+}
+.cardcontainer>section>div{
+    margin: auto;
+    text-align: center;
+}
+#card1{
+    padding: 5vh ;
+    box-sizing: border-box;
+    text-align: center;
+}
+#card1>hr{
+    width: 3vw;
+    background-color: rgb(242, 214, 102);
+    height: 1px;
+    border: none;
+}
+#card1>p{
+    word-spacing: 3px;
+    font-size: 18px;
+    color: rgb(143, 162, 185);
+}
+#card1>h3{
+    letter-spacing: 3px;
+}
+.skills{
+    background-color: rgb(243, 241, 241);
+    padding: 40px;
+}
+#card1:hover{
+    background-color: rgb(242, 210, 83);
+    color: white;
+}
+ #card1:hover > p{
+    color: white;
+    
+} 
+.latest{
+    width: 80vw;
+    height: 90vh;
+    margin: auto;
+}
+.work{
+    /* width: 100%;
+    height: ; */
+    text-align: center;
+    
+}
+.work>h1{
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    margin-top: 50px 0 ;
+}
+.work>hr{
+    width: 5vw;
+    height: 3px;
+    background-color: rgb(242, 210, 83);
+    border: none;
+}
+.work>p{
+    font-size: 1.1rem;
+    color: rgb(143, 162, 185);
+    margin: 30px;
+}
+.projects{
+    width: 80vw;
+    height: 50vh;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+   
+}
+.projects>section>img{
+    width: 100%;
+    height: auto;
+}
+.projects>section:nth-child(1){
+    background-image:url("https://html-css-portfolio-css-grid-project.netlify.app/images/project-1.jpeg") ;
+    background-position: center;
+    grid-row:span 2;
+}
+.projects>section:nth-child(2){
+    background-image: url("https://html-css-portfolio-css-grid-project.netlify.app/images/project-2.jpeg");
+    background-position: center;
+    grid-column:span 2;
+}
+.projects>section:nth-child(3){
+    background-image: url("https://html-css-portfolio-css-grid-project.netlify.app/images/project-3.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+.projects>section:nth-child(4){
+    background-image: url("https://html-css-portfolio-css-grid-project.netlify.app/images/project-4.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+.shade1{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(242, 210, 83);
+    opacity: 0;
+    transition-duration: 1s;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+.shade1:hover{
+    opacity: 0.9;
+    
+}
+.shade1>div{
+    padding: 80px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin: 13px;
+}
+
+.shade2{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(242, 210, 83);
+    opacity: 0;
+    transition-duration: 1s;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.shade2:hover{
+    opacity: 0.9;
+    
+}
+.shade2>div{
+    padding: 10px 5px; 
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin: 10px; 
+    
+}
+.shade3{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(242, 210, 83);
+    opacity: 0;
+    transition-duration: 1s;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+.shade3:hover{
+    opacity: 0.9;
+    
+}
+.shade3>div{
+    padding: 8px 5px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin: 10px;
+}
+.shade4{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(242, 210, 83);
+    opacity: 0;
+    transition-duration: 1s;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+.shade4:hover{
+    opacity: 0.9;
+    
+}
+.shade4>div{
+    padding: 8px 5px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin: 10px;
+}
+.touch{
+    width: 98vw;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-image: url(https://img.freepik.com/free-photo/group-diverse-people-having-business-meeting_53876-25060.jpg);
+    background-size: cover;
+    margin: auto;
+    margin-top: 20px;
+    /* opacity: 0.5; */
+    position: relative;
+    padding-top: 10vh;
+    box-sizing: border-box;
+}
+.contact{
+    width: 40vw;
+    height: 40vh;
+    background-color: rgb(247, 247, 212);
+    margin: 20vh auto;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.contact>hr{
+    width: 5vh;
+    height: 3px;
+    border: none;
+    background-color: rgb(242, 210, 83);
+}
+.contact>h1{
+    font-size: 1.9rem;
+    margin: 0;
+    letter-spacing: 2px;
+}
+.contact>p{
+    word-spacing: 2px;
+    font-size: 1.1rem;
+}
+.contact>button{
+    padding: 12px;
+    letter-spacing: 3px;
+    background-color:rgb(242, 210, 83) ;
+    border: none;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+/* .title{
+    width: 98vw;
+    height: 80vh;
+    background-color: aqua;
+    opacity: 0.1;
+} */
